@@ -62,7 +62,7 @@ Config4 = {
             },
             ["Machete"] = {	
                 hashname = "WEAPON_MELEE_MACHETE", 
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},    
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
@@ -74,7 +74,7 @@ Config4 = {
             },
             ["Collector Machete"] = {	
                 hashname = "WEAPON_MELEE_MACHETE_COLLECTOR",    
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
@@ -94,9 +94,9 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "Small_Leather", amount = 2},
-                    item2 = {name = "wood", amount = 4},
-                    item3 = {name = "Big_Leather", amount = 2},
+                    item1 = {name = "fibers", amount = 15},
+                    item2 = {name = "wood", amount = 15},
+                    item3 = {name = "leather", amount = 4},
                 }, 
             },
             ["Improved Bow"] = {	
@@ -106,147 +106,157 @@ Config4 = {
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 1},
-                    item2 = {name = "wood", amount = 3},
-                    item3 = {name = "rock", amount = 1},
+                    item1 = {name = "fibers", amount = 20},
+                    item2 = {name = "wood", amount = 20},
+                    item3 = {name = "leather", amount = 8},
                 }, 
             },
         },
         ["Rifles"] = {
-            ["Elephant Rifle"] = {	
-                hashname = "WEAPON_RIFLE_ELEPHANT",   
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 30},
-                    item2 = {name = "Big_Leather", amount = 5},
-                    item3 = {name = "copper", amount = 10},
-                }, 
-            },
             ["Varmint Rifle"] = {	
                 hashname = "WEAPON_RIFLE_VARMINT", 
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},  
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "Big_Leather", amount = 2},
+                    item1 = {name = "hwood", amount = 20},
+                    item2 = {name = "iron", amount = 10},
                     item3 = {name = "copper", amount = 5},
-                }, 
-            },
-            ["Rollingblock Rifle"] = {	
-                hashname = "WEAPON_SNIPERRIFLE_ROLLINGBLOCK", 
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"}, 
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 25},
-                    item2 = {name = "Big_Leather", amount = 4},
-                    item3 = {name = "copper", amount = 8},
-                }, 
-            },
-            ["Carcano Rifle"] = {	
-                hashname = "WEAPON_SNIPERRIFLE_CARCANO",  
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "Big_Leather", amount = 8},
-                    item3 = {name = "copper", amount = 10},
-                }, 
-            },
-            ["Springfield Rifle"] = {	
-                hashname = "WEAPON_RIFLE_SPRINGFIELD", 
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},  
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable  
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "Big_Leather", amount = 10},
-                    item3 = {name = "wood", amount = 10},
+                    item4 = {name = "leather", amount = 4},
                 }, 
             },
             ["Boltaction Rifle"] = {	
                 hashname = "WEAPON_RIFLE_BOLTACTION",  
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 25},
-                    item2 = {name = "wood", amount = 12},
-                    item3 = {name = "Big_Leather", amount = 5},
+                    item1 = {name = "hwood", amount = 25},
+                    item2 = {name = "iron", amount = 15},
+                    item3 = {name = "copper", amount = 10},
+                    item4 = {name = "leather", amount = 5},
+                }, 
+            },
+            ["Elephant Rifle"] = {	
+                hashname = "WEAPON_RIFLE_ELEPHANT",   
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 30},
+                    item2 = {name = "iron", amount = 20},
+                    item3 = {name = "copper", amount = 15},
+                    item4 = {name = "leather", amount = 6},
+                }, 
+            },
+            ["Rollingblock Rifle"] = {	
+                hashname = "WEAPON_SNIPERRIFLE_ROLLINGBLOCK", 
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"}, 
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 35},
+                    item2 = {name = "iron", amount = 25},
+                    item3 = {name = "copper", amount = 20},
+                    item4 = {name = "leather", amount = 7},
+                }, 
+            },
+            ["Carcano Rifle"] = {	
+                hashname = "WEAPON_SNIPERRIFLE_CARCANO",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 40},
+                    item2 = {name = "iron", amount = 30},
+                    item3 = {name = "copper", amount = 25},
+                    item4 = {name = "leather", amount = 8},
+                }, 
+            },
+            ["Springfield Rifle"] = {	
+                hashname = "WEAPON_RIFLE_SPRINGFIELD", 
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},  
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable  
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 45},
+                    item2 = {name = "iron", amount = 35},
+                    item3 = {name = "copper", amount = 30},
+                    item4 = {name = "leather", amount = 9},
                 }, 
             },
         },
         ["Repeaters"] = {
-            ["Winchester Repeater"] = {	
-                hashname = "WEAPON_REPEATER_WINCHESTER",   
-                jobonly = true,
+            ["Carbine Repeater"] = {	
+                hashname = "WEAPON_REPEATER_CARBINE",   
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"}, 
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 8},
+                    item1 = {name = "hwood", amount = 20},
+                    item2 = {name = "iron", amount = 10},
                     item3 = {name = "copper", amount = 5},
+                    item4 = {name = "leather", amount = 4},
+                }, 
+            },
+            ["Winchester Repeater"] = {	
+                hashname = "WEAPON_REPEATER_WINCHESTER",   
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"}, 
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 25},
+                    item2 = {name = "iron", amount = 15},
+                    item3 = {name = "copper", amount = 10},
+                    item4 = {name = "leather", amount = 5},
                 }, 
             },
             ["Henry Repeater"] = {	
                 hashname = "WEAPON_REPEATER_HENRY", 
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},    
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 10},
-                    item3 = {name = "copper", amount = 8},
+                    item1 = {name = "hwood", amount = 30},
+                    item2 = {name = "iron", amount = 20},
+                    item3 = {name = "copper", amount = 15},
+                    item4 = {name = "leather", amount = 6},
                 }, 
             },
             ["Evans Repeater"] = {	
                 hashname = "WEAPON_REPEATER_EVANS",
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},     
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 6},
-                    item3 = {name = "copper", amount = 12},
-                }, 
-            },
-            ["Carbine Repeater"] = {	
-                hashname = "WEAPON_REPEATER_CARBINE",   
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"}, 
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable 
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 5},
-                    item3 = {name = "copper", amount = 8},
+                    item1 = {name = "hwood", amount = 35},
+                    item2 = {name = "iron", amount = 25},
+                    item3 = {name = "copper", amount = 20},
+                    item4 = {name = "leather", amount = 7},
                 }, 
             },
         },
         ["Pistols"] = {
-                    ["SemiAuto Pistol "] = {	
-                hashname = "WEAPON_PISTOL_SEMIAUTO",   
+            ["Volcanic Pistol "] = {	
+                hashname = "WEAPON_PISTOL_VOLCANIC",   
                 jobonly = false,
-                jobs = {"police","gunsmith","rguns"},  
+                jobs = {"police","gunsmith","rguns"}, 
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "hwood", amount = 3},
+                    item2 = {name = "iron", amount = 10},
+                    item3 = {name = "copper", amount = 5},
                 }, 
             },
             ["Mauser Pistol "] = {	
@@ -256,21 +266,21 @@ Config4 = {
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "hwood", amount = 5},
+                    item2 = {name = "iron", amount = 15},
+                    item3 = {name = "copper", amount = 10},
                 }, 
             },
-            ["Volcanic Pistol "] = {	
-                hashname = "WEAPON_PISTOL_VOLCANIC",   
+            ["SemiAuto Pistol "] = {	
+                hashname = "WEAPON_PISTOL_SEMIAUTO",   
                 jobonly = false,
-                jobs = {"police","gunsmith","rguns"}, 
+                jobs = {"police","gunsmith","rguns"},  
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "hwood", amount = 7},
+                    item2 = {name = "iron", amount = 20},
+                    item3 = {name = "copper", amount = 15},
                 }, 
             },
             ["M1899 Pistol "] = {	
@@ -280,78 +290,89 @@ Config4 = {
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "hwood", amount = 9},
+                    item2 = {name = "iron", amount = 25},
+                    item3 = {name = "copper", amount = 20},
                 }, 
             },
             
         }, 
         ["Revolvers"] = {
-            ["Schofield Revolver"] = {	
-                hashname = "WEAPON_REVOLVER_SCHOFIELD",  
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"}, 
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable  
+            ["Cattleman Revolver"] = {	
+                hashname = "WEAPON_REVOLVER_CATTLEMAN",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},   
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 14},
-                    item2 = {name = "wood", amount = 2},
+                    item1 = {name = "hwood", amount = 3},
+                    item2 = {name = "iron", amount = 10},
                     item3 = {name = "copper", amount = 5},
                 }, 
             },
             ["Lemat Revolver"] = {	
                 hashname = "WEAPON_REVOLVER_LEMAT",   
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"}, 
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "copper", amount = 8},
+                    item1 = {name = "hwood", amount = 5},
+                    item2 = {name = "iron", amount = 15},
+                    item3 = {name = "copper", amount = 10},
+                }, 
+            },
+            ["Schofield Revolver"] = {	
+                hashname = "WEAPON_REVOLVER_SCHOFIELD",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"}, 
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable  
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 7},
+                    item2 = {name = "iron", amount = 20},
+                    item3 = {name = "copper", amount = 15},
                 }, 
             },
             ["Double Action Revolver"] = {	
                 hashname = "WEAPON_REVOLVER_DOUBLEACTION", 
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"}, 
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable   
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 18},
-                    item2 = {name = "wood", amount = 3},
-                    item3 = {name = "copper", amount = 8},
-                }, 
-            },
-            ["Cattleman Revolver"] = {	
-                hashname = "WEAPON_REVOLVER_CATTLEMAN",  
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},   
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 10},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "copper", amount = 4},
+                    item1 = {name = "hwood", amount = 9},
+                    item2 = {name = "iron", amount = 25},
+                    item3 = {name = "copper", amount = 20},
                 }, 
             },
             ["Navy Revolver"] = {	
                 hashname = "WEAPON_REVOLVER_NAVY",     
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 15},
-                    item2 = {name = "wood", amount = 4},
-                    item3 = {name = "copper", amount = 5},
+                    item1 = {name = "hwood", amount = 11},
+                    item2 = {name = "iron", amount = 30},
+                    item3 = {name = "copper", amount = 25},
                 }, 
             },
         },
         ["Throwable"] = { -- Due to vorp bug, using this weapon never runs out of ammo if u requip. 
         -- in order for throwables to work. the player must buy the throwable weapon then buy and use the related ammo box
         -- only then will the throwable show up in their weapon wheel 
+            ["Bolas"] = {	
+                hashname = "WEAPON_THROWN_BOLAS",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},   
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "fibers", amount = 4},
+                    item2 = {name = "rock", amount = 6},
+                }, 
+            },
             ["Tomahawk"] = {	
                 hashname = "WEAPON_THROWN_TOMAHAWK",  
                 jobonly = false,
@@ -359,9 +380,9 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 3},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "Small_Leather", amount = 2},
+                    item1 = {name = "iron", amount = 4},
+                    item2 = {name = "hwood", amount = 4},
+                    item3 = {name = "leather", amount = 2},
                 }, 
             },
             ["Knives"] = {	
@@ -371,108 +392,61 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 3},
+                    item1 = {name = "iron", amount = 2},
                     item2 = {name = "wood", amount = 2},
-                    item3 = {name = "Small_Leather", amount = 1},
+                    item3 = {name = "leather", amount = 1},
                 }, 
             },
-            ["Poison Bottle"] = {	
-                hashname = "WEAPON_THROWN_POISONBOTTLE", 
-                jobonly = false,
-                jobs = {"police","gunsmith","rguns"},   
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "alcohol", amount = 2},
-                    item2 = {name = "SongbirdCarcass", amount = 1},
-                    item3 = {name = "acid", amount = 5},
-                }, 
-            },
-            ["Bolas"] = {	
-                hashname = "WEAPON_THROWN_BOLAS",  
-                jobonly = false,
-                jobs = {"police","gunsmith","rguns"},   
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "Small_Leather", amount = 4},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
-                }, 
-            },
-            ["Dynamite"] = {	
-                hashname = "WEAPON_THROWN_DYNAMITE",  
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},   
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "dynamite", amount = 5},
-                    item2 = {name = "Small_Leather", amount = 5},
-                    item3 = {name = "rock", amount = 5},
-                }, 
-            },
-            ["Molotov"] = {	
-                hashname = "WEAPON_THROWN_MOLOTOV",
-                jobonly = true,
-                jobs = {"police","gunsmith","rguns"},    
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "alcohol", amount = 4},
-                    item2 = {name = "Small_Leather", amount = 4},
-                    item3 = {name = "acid", amount = 4},
-                }, 
-            },
+            -- ["Poison Bottle"] = {	
+            --     hashname = "WEAPON_THROWN_POISONBOTTLE", 
+            --     jobonly = false,
+            --     jobs = {"police","gunsmith","rguns"},   
+            --     letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+            --     craftcost = 0,
+            --     materials = {
+            --         item1 = {name = "alcohol", amount = 2},
+            --         item2 = {name = "SongbirdCarcass", amount = 1},
+            --         item3 = {name = "acid", amount = 5},
+            --     }, 
+            -- },
+            -- ["Dynamite"] = {	
+            --     hashname = "WEAPON_THROWN_DYNAMITE",  
+            --     jobonly = false,
+            --     jobs = {"police","gunsmith","rguns"},   
+            --     letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+            --     craftcost = 0,
+            --     materials = {
+            --         item1 = {name = "dynamite", amount = 5},
+            --         item2 = {name = "Small_Leather", amount = 5},
+            --         item3 = {name = "rock", amount = 5},
+            --     }, 
+            -- },
+            -- ["Molotov"] = {	
+            --     hashname = "WEAPON_THROWN_MOLOTOV",
+            --     jobonly = false,
+            --     jobs = {"police","gunsmith","rguns"},    
+            --     letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+            --     craftcost = 0,
+            --     materials = {
+            --         item1 = {name = "alcohol", amount = 4},
+            --         item2 = {name = "Small_Leather", amount = 4},
+            --         item3 = {name = "acid", amount = 4},
+            --     }, 
+            -- },
 
         },
         ["Shotguns"] = {
-            ["Semiauto Shotgun"] = {	
-                hashname = "WEAPON_SHOTGUN_SEMIAUTO",  
-                jobonly = false,
-                jobs = {"police","gunsmith","rguns"},
-                letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable   
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
-                }, 
-            },
             ["Sawedoff Shotgun"] = {	
                 hashname = "WEAPON_SHOTGUN_SAWEDOFF",  
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"}, 
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable  
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 15},
-                    item2 = {name = "wood", amount = 5},
-                    item3 = {name = "copper", amount = 10},
-                }, 
-            },
-            ["Repeating Shotgun"] = {	
-                hashname = "WEAPON_SHOTGUN_REPEATING",   
-                jobonly = false,
-                jobs = {"police","gunsmith","rguns"},  
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 20},
-                    item2 = {name = "wood", amount = 8},
-                    item3 = {name = "copper", amount = 10},
-                }, 
-            },
-            ["Pump Shotgun"] = {	
-                hashname = "WEAPON_SHOTGUN_PUMP",  
-                jobonly = false,
-                jobs = {"police","gunsmith","rguns"},   
-                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 15},
-                    item2 = {name = "wood", amount = 15},
-                    item3 = {name = "copper", amount = 8},
+                    item1 = {name = "hwood", amount = 20},
+                    item2 = {name = "iron", amount = 10},
+                    item3 = {name = "copper", amount = 5},
+                    item4 = {name = "leather", amount = 4},
                 }, 
             },
             ["Doublebarrel Shotgun"] = {	
@@ -482,71 +456,108 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 25},
-                    item2 = {name = "wood", amount = 5},
-                    item3 = {name = "copper", amount = 5},
+                    item1 = {name = "hwood", amount = 25},
+                    item2 = {name = "iron", amount = 15},
+                    item3 = {name = "copper", amount = 10},
+                    item4 = {name = "leather", amount = 5},
+                }, 
+            },
+            ["Repeating Shotgun"] = {	
+                hashname = "WEAPON_SHOTGUN_REPEATING",   
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},  
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 30},
+                    item2 = {name = "iron", amount = 20},
+                    item3 = {name = "copper", amount = 15},
+                    item4 = {name = "leather", amount = 6},
+                }, 
+            },
+            ["Semiauto Shotgun"] = {	
+                hashname = "WEAPON_SHOTGUN_SEMIAUTO",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},
+                letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable   
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 35},
+                    item2 = {name = "iron", amount = 25},
+                    item3 = {name = "copper", amount = 20},
+                    item4 = {name = "leather", amount = 7},
+                }, 
+            },
+            ["Pump Shotgun"] = {	
+                hashname = "WEAPON_SHOTGUN_PUMP",  
+                jobonly = false,
+                jobs = {"police","gunsmith","rguns"},   
+                letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "hwood", amount = 40},
+                    item2 = {name = "iron", amount = 30},
+                    item3 = {name = "copper", amount = 20},
+                    item4 = {name = "leather", amount = 8},
                 }, 
             },
         },
         ["Misc."] = {
             ["Lasso"] = {	
                 hashname = "WEAPON_LASSO",   
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},  
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "Small_Leather", amount = 2},
-                    item2 = {name = "Big_Leather", amount = 2},
-                -- item3 = {name = "", amount = },
+                    item1 = {name = "fibers", amount = 30},
                 }, 
             },
             ["Reinforced Lasso"] = {	
                 hashname = "WEAPON_LASSO_REINFORCED",   
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "Small_Leather", amount = 5},
-                    item2 = {name = "Big_Leather", amount = 5},
-                    item3 = {name = "copper", amount = 2},
-                }, 
-            },
-            ["Improved Binoculars"] = {	
-                hashname = "WEAPON_KIT_BINOCULARS_IMPROVED",  
-                jobonly = true,
-                jobs = {"police","gunsmith"},
-                letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
-                craftcost = 0,
-                materials = {
-                    item1 = {name = "iron", amount = 8},
-                    item2 = {name = "copper", amount = 8},
-                    item3 = {name = "Small_Leather", amount = 4},
+                    item1 = {name = "fibers", amount = 40},
+                    item2 = {name = "sap", amount = 10},
                 }, 
             },
             ["Binoculars"] = {	
                 hashname = "WEAPON_kIT_BINOCULARS",  
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith"}, 
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 4},
+                    item1 = {name = "iron", amount = 8},
                     item2 = {name = "copper", amount = 4},
-                    item3 = {name = "Small_Leather", amount = 4},
+                    item3 = {name = "leather", amount = 2},
+                }, 
+            },
+            ["Improved Binoculars"] = {	
+                hashname = "WEAPON_KIT_BINOCULARS_IMPROVED",  
+                jobonly = false,
+                jobs = {"police","gunsmith"},
+                letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
+                craftcost = 0,
+                materials = {
+                    item1 = {name = "iron", amount = 10},
+                    item2 = {name = "copper", amount = 6},
+                    item3 = {name = "leather", amount = 4},
                 }, 
             },
             ["Fishing Rod"] = {	
                 hashname = "WEAPON_FISHINGROD",   
-                jobonly = true,
+                jobonly = false,
                 jobs = {"police","gunsmith","rguns"},  
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 1},
-                    item2 = {name = "wood", amount = 4},
-                    item3 = {name = "Small_Leather", amount = 1},
+                    item1 = {name = "iron", amount = 4},
+                    item2 = {name = "wood", amount = 12},
+                    item3 = {name = "fibers", amount = 20},
                 }, 
             },
             ["Camera"] = {	
@@ -556,9 +567,9 @@ Config4 = {
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "iron", amount = 8},
+                    item2 = {name = "copper", amount = 4},
+                    item3 = {name = "leather", amount = 2},
                 }, 
             },
             ["Advanced Camera"] = {	
@@ -568,9 +579,9 @@ Config4 = {
                 letcraft = false, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 2},
-                    item2 = {name = "wood", amount = 2},
-                    item3 = {name = "rock", amount = 2},
+                    item1 = {name = "iron", amount = 10},
+                    item2 = {name = "copper", amount = 6},
+                    item3 = {name = "leather", amount = 4},
                 }, 
             },
             ["Lantern"] = {	
@@ -580,9 +591,9 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 10},
-                    item2 = {name = "provision_coal", amount = 2},
-                    item3 = {name = "Small_Leather", amount = 4},
+                    item1 = {name = "iron", amount = 16},
+                    item2 = {name = "coal", amount = 6},
+                    item3 = {name = "copper", amount = 8},
                 }, 
             },
             ["Davy Lantern"] = {	
@@ -592,9 +603,9 @@ Config4 = {
                 letcraft = true, -- show in crafting u can toggle this to false if you want to make this weapon sellable but not craftable
                 craftcost = 0,
                 materials = {
-                    item1 = {name = "iron", amount = 12},
-                    item2 = {name = "provision_coal", amount = 2},
-                    item3 = {name = "Small_Leather", amount = 5},
+                    item1 = {name = "iron", amount = 20},
+                    item2 = {name = "coal", amount = 10},
+                    item3 = {name = "copper", amount = 12},
                 },
             },
         },  
