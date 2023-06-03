@@ -1,4 +1,4 @@
-
+Config = {}
 Config = {
 
     keys = {
@@ -16,10 +16,10 @@ Config = {
     updatedinventoryammo = true, -- use if using updated inventory with new ammo system 
 
     adminwebhook = "https://discord.com/api/webhooks/792119960432148480/pe_FudhkrXZTQsOTRPimLj569T0kwLf4E0RFhLIz1nwe-XTZ_ROFfEIUVxaHOWrSoAEw",
-    jobonly = true, -- only players with mentioned jobs below can access crafting/customization station
-    job ={ "gunsmith", "rguns"},
-    jobrankcustomization = 2,
-    jobrankcrafting = 1,
+    jobonly = false, -- only players with mentioned jobs below can access crafting/customization station
+    job ={ "gunsmith" },
+    jobrankcustomization = 0,
+    jobrankcrafting = 0,
     craftingcost =  false,
 
     weaponshops = true, -- endable or disable weapon shops
@@ -36,6 +36,14 @@ Config = {
             Pos = {x= 1327.09, y=-1321.91, z=77.88}, -- location weapon customization station
             Pos2 = {x= 1326.09, y=-1321.91, z=78.28}, -- location spawned weapon 3d model
         },
+        Annesburg = {	   
+            Pos = {x = 2950.92, y = 1316.64, z = 44.82}, -- location weapon customization station
+            Pos2 = {x = 2949.92, y = 1316.64, z = 45.32}, -- location spawned weapon 3d model
+        },
+        SaintD = {	   
+            Pos = {x = 2710.76, y = -1287.77, z = 49.64}, -- location weapon customization station
+            Pos2 = {x = 2709.76, y = -1287.77, z = 50.14}, -- location spawned weapon 3d model
+        },
     },
 
     craftinglocation = { 
@@ -44,6 +52,12 @@ Config = {
         },
         Rhodes = {	   
             Pos = {x= 1329.68, y=-1320.9, z=77.88}, -- location weapon crafting station
+        },
+        Annesburg = {	   
+            Pos = {x = 2953.1, y = 1314.89, z = 44.82}, -- location weapon crafting station
+        },
+        SaintD = {	   
+            Pos = {x = 2709.23, y = -1284.03, z = 49.64}, -- location weapon crafting station
         },
     },
 
